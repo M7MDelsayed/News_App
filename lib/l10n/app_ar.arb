@@ -1,0 +1,17 @@
+{
+"news" : "تطبيق أخبار",
+"choose" : "اختر فئة اهتمامك",
+"sports" : "رياضة",
+"politics" : "سياسة",
+"health" : "صحة",
+"business" : "أعمال",
+"entertainment" : "ترفية",
+"science" : "علوم",
+"categories" : "الفئات",
+"settings" : "الإعدادات",
+"hint" : "إبحث عن موضوع",
+"lang" : "اللغة",
+"english" : "إنجليزي",
+"arabic" : "عربي",
+"title" : "تفاصيل الأخبار"
+}
