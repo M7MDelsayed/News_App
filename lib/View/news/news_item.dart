@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:news_app/View/news/published_date.dart';
 
 import '../../Model/news/News.dart';
 import 'news_details.dart';
@@ -54,7 +55,7 @@ class NewsItem extends StatelessWidget {
               height: 8,
             ),
             Text(
-              news?.publishedAt ?? '',
+              publishedAt(news!),
               textAlign: TextAlign.end,
               style: const TextStyle(
                 color: Color(0xFF707070),

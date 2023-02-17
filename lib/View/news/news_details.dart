@@ -1,7 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:intl/intl.dart';
+import 'package:news_app/View/news/published_date.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../Model/news/News.dart';
@@ -147,49 +147,6 @@ class NewsDetails extends StatelessWidget {
       ],
     );
   }
-
-  publishedAt(News news) {
-    var dateTimeNow = DateTime.now();
-    var difference = dateTimeNow
-        .difference(
-          DateTime.parse(news.publishedAt ?? ""),
-        )
-        .inMinutes;
-    if (difference < 1) {
-      difference = dateTimeNow
-          .difference(
-            DateTime.parse(news.publishedAt ?? ""),
-          )
-          .inSeconds;
-      return "$difference seconds ago";
-    } else if (difference < 60) {
-      difference = dateTimeNow
-          .difference(
-            DateTime.parse(news.publishedAt ?? ""),
-          )
-          .inMinutes;
-      return "$difference minutes ago";
-    } else if (difference > 60 && difference < 1440) {
-      difference = dateTimeNow
-          .difference(
-            DateTime.parse(news.publishedAt ?? ""),
-          )
-          .inHours;
-      return "$difference hours ago";
-    } else if (difference > 1440 && difference < 44640) {
-      difference = dateTimeNow
-          .difference(
-            DateTime.parse(news.publishedAt ?? ""),
-          )
-          .inDays;
-      return "$difference days ago";
-    } else {
-      return DateFormat.yMMMd().format(
-        DateTime.parse(news.publishedAt ?? ""),
-      );
-    }
-  }
-
   Future<void> _launchUrl(Uri url) async {
     if (!await launchUrl(url)) {
       throw 'Could not launch $url';
