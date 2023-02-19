@@ -9,7 +9,7 @@ Flutter application to browse all news and exclusive news from all news sites an
 => News Details                                                                                                                                                           
 => Settings Screen                                                                                                                                                       
 
-### Getting Started
+### Photos
 
 ![Screenshot (77)](https://user-images.githubusercontent.com/98716306/219908078-576b40d6-b4cc-413e-acec-a9bf3de47543.png)
 ![Screenshot (78)](https://user-images.githubusercontent.com/98716306/219908081-53bee629-f7a5-4285-9adc-9e11a75c81e1.png)
